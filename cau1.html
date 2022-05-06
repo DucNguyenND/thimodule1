@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let arr= [5,8,7,9,7,8,9,6,1,4,7,8,5]
+    let max=arr[0]
+    function findMax(arr1){
+        for (let i = 1; i < arr1.length; i++) {
+            if (max<arr1[i]){
+                max=arr1[i];
+            }
+        }
+        console.log(max);
+    }
+    findMax(arr)
+</script>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let n1=0
+    let n2=1
+    let temp=0
+    let x=parseInt(prompt("Nhập số X"))
+    temp= n1 + n2;
+function isFibonacci(x1){
+    let check = false
+    while (temp <= x1) {
+        temp = n1 + n2;
+        n1 = n2;
+        n2 = temp;
+        if (temp === x1) {
+            check = true
+            break
+        }
+    }
+    return check;
+}
+
+    console.log(isFibonacci(x))
+</script>
